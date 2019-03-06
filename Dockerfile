@@ -19,4 +19,7 @@ RUN chown -R jenkins ./apache-jmeter-5.0
 
 RUN mkdir /var/lib/jenkins && chown -R jenkins /var/lib/jenkins
 
+EXPOSE 4441
+EXPOSE 4442
+
 CMD ["/usr/sbin/sshd", "-D"]
